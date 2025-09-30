@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import UserList from '../UI/user-list/UserList';
 import './App.css'
 const userInfo =
@@ -20,11 +21,11 @@ const userInfo =
 
 function App() {
 
- 
-
+ const [users , setUsers] = useState(userInfo);
+  
   return (
     <>
-      <UserList userList = {userInfo}/>
+      <UserList userList = {users}/>
     
     </>
   )
