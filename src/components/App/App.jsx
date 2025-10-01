@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import UserList from '../UI/user-list/UserList';
 import './App.css'
+import Container from '../LayOut/Container/Container';
+import Header from '../LayOut/Header/Header';
 const userInfo =
  [
   {
@@ -25,7 +27,10 @@ function App() {
   
   return (
     <>
+      <Container>
+      <Header><h1>User Information</h1></Header>
       <UserList userList = {users}/>
+      </Container>
     
     </>
   )
