@@ -2,12 +2,10 @@ import React from "react";
 import styles from "./userinfo.module.css";
 const UserInfo = ({ name, age }) => {
   return (
-    <div className={styles.container}>
+   
      
       <div className={styles.card}>
-        <h2 className={styles.title}>
-          User Information
-        </h2>
+       
         <table className={styles.userTable}>
           <thead className="bg-indigo-500 text-white">
             <tr>
@@ -23,7 +21,7 @@ const UserInfo = ({ name, age }) => {
           </tbody>
         </table>
       </div>
-    </div>
+    
   );
 };
 
